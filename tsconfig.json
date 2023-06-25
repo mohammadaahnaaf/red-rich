@@ -15,7 +15,8 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@redrich/*": ["./src/components/*"]
+      "@redrich/*": ["./src/components/*"],
+      "@redrich-style/*": ["./src/styles/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/index.js", "src/components/home/index.js"],
