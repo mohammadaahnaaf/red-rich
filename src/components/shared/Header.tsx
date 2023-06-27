@@ -8,8 +8,8 @@ type Props = {}
 export const Header = (props: Props) => {
     const router = useRouter()
     return (
-        <div className='bg-red-800 bg-opacity-10'>
-            <header className='p-5 max-w-7xl mx-auto flex items-center justify-center gap-8'>
+        <div className='bg-white'>
+            <header className='p-4 max-w-7xl mx-auto flex items-center justify-center gap-8'>
                 <div className='flex gap-8 items-center'>
                     <Link className='hover:scale-125 duration-300 text-red-600' href='/resort'>Resort</Link>
                     <Link className='hover:scale-125 duration-300 text-red-600' href='/tourism'>Tourism</Link>
