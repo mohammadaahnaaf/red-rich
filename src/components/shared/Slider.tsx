@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 var Carousel = require('react-responsive-carousel').Carousel;
+
 type Props = {}
 
 export const Slider = (props: Props) => {
@@ -11,18 +11,6 @@ export const Slider = (props: Props) => {
         "/banners/banner3.jpg",
         "/banners/banner4.jpg",
     ])
-    const [current, setCurrent] = useState(0)
-
-
-    function slide() {
-        if (current < 2) {
-            setCurrent(current + 1)
-        } else {
-            setCurrent(0)
-        }
-    }
-
-    setInterval(() => { slide() }, 3000)
 
     return (
         <div className="w-full h-full bg-black bg-opacity-20">
