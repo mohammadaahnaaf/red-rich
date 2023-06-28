@@ -2,15 +2,13 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 var Carousel = require('react-responsive-carousel').Carousel;
 
-type Props = {}
+type Props = {
+    images: any[]
+}
 
 export const Slider = (props: Props) => {
-    const [image, setImage] = useState([
-        "/banners/banner1.jpg",
-        "/banners/banner2.jpg",
-        "/banners/banner3.jpg",
-        "/banners/banner4.jpg",
-    ])
+
+    let image = props.images
 
     return (
         <div className="w-full h-full bg-black bg-opacity-20">
@@ -33,9 +31,9 @@ export const Slider = (props: Props) => {
             // onClickThumb={onClickThumb}
             >
                 {image?.map((img, index) => (
-                    <div key={index}>
-                        <img
-                            // fill
+                    <div key={index} className='w-full h-[90vh]'>
+                        <Image
+                            fill
                             className='object-cover h-[90vh] w-full select-none cursor-pointer'
                             src={img} alt='image'
                         />

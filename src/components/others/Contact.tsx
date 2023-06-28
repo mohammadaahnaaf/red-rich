@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 type Props = {}
 
-export const Home = (props: Props) => {
+export const Contact = (props: Props) => {
     
     const images = [
         "/banners/banner1.jpg",
