@@ -19,6 +19,6 @@
       "@redrich-style/*": ["./src/styles/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/index.js", "src/components/home/index.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/index.js", "src/components/home/index.ts"],
   "exclude": ["node_modules"]
 }
