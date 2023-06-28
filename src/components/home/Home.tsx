@@ -1,24 +1,24 @@
 import Image from 'next/image'
 import React from 'react'
 import { Inter } from 'next/font/google'
-import { Header, Slider } from '@redrich/shared'
+import { Slider } from '@redrich/shared'
+import { Layout } from '@redrich/layouts'
 
 const inter = Inter({ subsets: ['latin'] })
 
 type Props = {}
 
 export const Home = (props: Props) => {
-    
+
     const images = [
         "/banners/banner1.jpg",
-        "/banners/banner2.jpg",
+        // "/banners/banner2.jpg",
         "/banners/banner3.jpg",
         "/banners/banner4.jpg",
     ]
 
     return (
-        <>
-            <Header />
+        <Layout>
             <div>
                 <main
                     className={`flex flex-col gap-5 w-full items-center justify-center ${inter.className}`}
@@ -36,7 +36,7 @@ export const Home = (props: Props) => {
                 </div> */}
                 </main>
             </div>
-        </>
+        </Layout>
 
     )
 }
