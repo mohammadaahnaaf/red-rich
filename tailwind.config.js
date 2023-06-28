@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      cursor: {
+        default: 'url(/logo/cursor.svg), default',
+        pointer: 'url(/logo/cusror.svg), pointer',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
