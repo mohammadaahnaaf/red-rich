@@ -30,12 +30,6 @@
 @tailwind utilities;
 
 
-*,
-*:before,
-*:after {
-  @apply cursor-default;
-}
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -51,8 +45,17 @@
 }
 
 body {
+  cursor: url('/logo/cursor.svg'), default;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+
+}
+
+*,
+*:before,
+*:after {
+  @apply cursor-default;
+  /* @apply cursor-auto; */
 }

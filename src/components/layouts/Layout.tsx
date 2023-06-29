@@ -1,5 +1,5 @@
 import { Footer, Header } from '@redrich/shared'
-import React, { ReactComponentElement } from 'react'
+import React from 'react'
 
 type Props = {
     children: any
@@ -7,10 +7,10 @@ type Props = {
 
 export const Layout = (props: Props) => {
     return (
-        <div>
+        <div className='min-h-screen'>
             <Header />
             {props.children}
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

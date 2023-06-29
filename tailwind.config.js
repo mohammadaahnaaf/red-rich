@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       cursor: {
         default: 'url(/logo/cursor.svg), default',
-        pointer: 'url(/logo/cusror.svg), pointer',
+        pointer: 'url(/logo/cursor.svg), pointer',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
