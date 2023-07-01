@@ -11,23 +11,16 @@ type Props = {}
 export const Home = (props: Props) => {
 
     const images = [
-        "/banners/banner1.jpg",
-        // "/banners/banner2.jpg",
-        "/banners/banner3.jpg",
-        "/banners/banner4.jpg",
+        "/banners/banner-pool9.jpg",
+        "/banners/banner-pool02.jpg",
+        "/banners/banner-woman.jpg",
+        "/banners/banner-pool.jpg",
     ]
 
     return (
-        <>
-            {/* // <Layout> */}
-            <Header />
-            <div className='grid'>
-                <Slider images={images} />
-                <div className='bg-sky-500 w-full h-screen'></div>
-            </div>
-            <Footer />
-            {/* //</Layout> */}
-        </>
-
+        <div className='grid'>
+            <Slider images={images} />
+            {/* <div className='bg-sky-500 w-full h-screen'></div> */}
+        </div>
     )
 }

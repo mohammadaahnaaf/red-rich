@@ -11,8 +11,10 @@ export const Slider = (props: Props) => {
     let image = props.images
 
     return (
-        <div className="w-full h-full bg-black bg-opacity-20">
-
+        <div className="relative w-full h-ful bg-black bg-opacity-40">
+            {/* <div className='absolute mx-auto w-full items-center grid justify-left h-full'>
+                <h1 className='text-6xl p-5 opacity-50 uppercase ring-2 ring-white font-semibold'>Welcome To Redrich Resort</h1>
+            </div> */}
             <Carousel
                 autoPlay
                 infiniteLoop
@@ -31,10 +33,10 @@ export const Slider = (props: Props) => {
             // onClickThumb={onClickThumb}
             >
                 {image?.map((img, index) => (
-                    <div key={index} className='w-full h-[90vh]'>
+                    <div key={index} className='w-full min-h-screen'>
                         <Image
                             fill
-                            className='object-cover h-[90vh] w-full select-none cursor-pointer'
+                            className='object-fill  h-full w-full select-none cursor-pointer'
                             src={img} alt='image'
                         />
                     </div>

@@ -1,7 +1,6 @@
-import Image from 'next/image'
 import React from 'react'
 import { Inter } from 'next/font/google'
-import { Header, Slider } from '@redrich/shared'
+import { Slider } from '@redrich/shared'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,33 +9,19 @@ type Props = {}
 export const Locations = (props: Props) => {
 
     const images = [
-        "/banners/banner1.jpg",
-        "/banners/banner2.jpg",
-        "/banners/banner3.jpg",
-        "/banners/banner4.jpg",
+        "/banners/banner-pool9.jpg",
+        "/banners/banner-pool02.jpg",
+        "/banners/banner-woman.jpg",
+        "/banners/banner-pool.jpg",
     ]
 
     return (
-        <>
-            <Header />
-            <div>
-                <main
-                    className={`flex flex-col gap-5 w-full items-center justify-center ${inter.className}`}
-                >
-                    <Slider images={images} />
-                    {/* <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-pink-200 after:via-red-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-red-700/10 after:dark:from-pink-900 after:dark:via-[#ff0001]/40 before:lg:h-[360px]">
-                    <Image
-                        className="relative dark:drop-shadow-[0_0_0.3rem_#ee6b6e]"
-                        src="/logo/red-rich.svg"
-                        alt="Next.js Logo"
-                        width={580}
-                        height={237}
-                        priority
-                    />
-                </div> */}
-                </main>
+        <div className='grid h-screen items-center bg-red-50'>
+            {/* <Slider images={images} /> */}
+            <div className='px-10'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.8660014717!2d90.25446582657518!3d23.780863189968727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1688236259489!5m2!1sen!2sbd" className='h-[60vh] w-full border-0' />
             </div>
-        </>
 
+        </div>
     )
 }

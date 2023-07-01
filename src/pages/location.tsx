@@ -1,4 +1,4 @@
-import { Header } from '@redrich/shared'
+import { Locations } from '@redrich/others'
 import Head from 'next/head'
 import React from 'react'
 
@@ -10,7 +10,7 @@ export default function LocationPage(props: Props) {
         <Head>
             <title>RedRich | Locations</title>
         </Head>
-        <Header />
+        <Locations />
         </>
     )
 }

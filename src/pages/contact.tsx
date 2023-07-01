@@ -1,3 +1,4 @@
+import { Contact } from '@redrich/others'
 import { Header } from '@redrich/shared'
 import Head from 'next/head'
 import React from 'react'
@@ -10,7 +11,7 @@ export default function ContactPage(props: Props) {
         <Head>
             <title>RedRich | Contact</title>
         </Head>
-        <Header />
+        <Contact />
         </>
     )
 }
