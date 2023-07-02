@@ -36,7 +36,7 @@ export const Slider = (props: Props) => {
                     <div key={index} className='w-full min-h-screen'>
                         <Image
                             fill
-                            className='object-fill  h-full w-full select-none cursor-pointer'
+                            className='object-fill h-full w-full select-none cursor-pointer'
                             src={img} alt='image'
                         />
                     </div>

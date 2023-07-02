@@ -21,6 +21,10 @@
   /* border-radius: 5px; */
 }
 
+video::-webkit-media-controls {
+  opacity: 0%;
+}
+
 *::-webkit-scrollbar-thumb {
   cursor: url('/logo/cursor.svg'), default;
   background-color: red;
