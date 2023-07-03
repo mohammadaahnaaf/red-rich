@@ -15,7 +15,7 @@ export const About = (props: Props) => {
         <div className='bg-gray-100'>
 
             <div className='max-w-6xl py-8 mx-auto text-black'>
-                <h2 className='text-gray-600 text-3xl text-center py-8 font-semibold'>ABOUT REDRICH</h2>
+                {/* <h2 className='text-gray-600 text-3xl text-center py-8 font-semibold'>ABOUT REDRICH</h2> */}
 
                 {/* top about  */}
                 <div className='grid grid-cols-3 items-start h-full p-4 gap-4 min-h-[70vh]'>
@@ -92,7 +92,11 @@ export const About = (props: Props) => {
                 <div className="flex flex-col">
                     <div className="relative">
                         <video className="w-full" controls={true} autoPlay={true} loop={true} muted={mute}>
-                            <source src="/videos/video1.mp4" type="video/mp4" />
+                            <source
+                                // src='https://youtu.be/Y-uMPL5qcKE?t=32'
+                                src="/videos/video1.mp4"
+                                type="video/mp4"
+                            />
                             Your browser does not support the video tag.
                         </video>
                         <button
@@ -103,6 +107,120 @@ export const About = (props: Props) => {
                 </div>
             </div>
 
+            {/* details  */}
+            <div className='max-w-6xl mx-auto py-8 grid grid-cols-2 justify-between gap-4'>
+                <div className='h-[18vh] w-full rounded-2xl grid grid-cols-4 bg-white'>
+                    <div className='rounded-l-2xl col-span-1'>
+                        <div className="h-[18vh] w-full relative">
+                            <Image
+                                src={"/banners/banner-woman0.jpg"}
+                                alt="woman-image"
+                                fill
+                                className="rounded-l-2xl object-cover"
+                            />
+                        </div>
+                    </div>
+                    <div className='bg-[#510D10] bg-opacity-20 grid items-center col-span-3 rounded-r-2xl'>
+                        <div className='grid gap-4 px-10'>
+                            <h3 className='text-lg font-semibold text-[#510D10]'>
+                                What Is RedRich?
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='h-[18vh] w-full rounded-2xl grid grid-cols-4 bg-white'>
+                    <div className='rounded-l-2xl col-span-1'>
+                        <div className="h-[18vh] w-full relative">
+                            <Image
+                                src={"/banners/banner-woman09.jpg"}
+                                alt="woman-image"
+                                fill
+                                className="rounded-l-2xl object-cover"
+                            />
+                        </div>
+                    </div>
+
+                    <div className='bg-[#510D10] bg-opacity-20 grid items-center col-span-3 rounded-r-2xl'>
+                        <div className='grid gap-4 px-10'>
+                            <h3 className='text-lg font-semibold text-[#510D10]'>
+                                What RedRich Does?
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            {/* motto 2 */}
+            <div>
+                <div className='grid items-center gap-4 w-full py-20 justify-center'>
+                    {/* <div className='w-full flex justify-center'>
+                        <Image
+                            width={150}
+                            height={150}
+                            src={"/logo/red-rich.svg"}
+                            alt="logo-image"
+                            // fill
+                            className="object-cover p-2"
+                        />
+                    </div> */}
+                    <h3 className='text-2xl text-gray-600 max-w-lg text-center font-semibold'>
+                        Keeping people safe and making a positive impact
+                    </h3>
+                    <button className='flex items-center justify-center gap-1 font-medium cursor-pointer text-gray-600 hover:text-gray-500' type='button'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 p-0.5 ring-1 ring-gray-400 rounded-full">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                        <span>
+                            Learn More
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            {/* newsletters  */}
+            <div className='max-w-6xl grid grid-cols-3 gap-8 mx-auto w-full p-4'>
+                <div className='grid col-span-1'>
+                    <div className="h-[40vh] w-full relative">
+                        <Image
+                            src={"/banners/banner-pool3.jpg"}
+                            alt="woman-image"
+                            fill
+                            className="rounded-t-2xl object-cover"
+                        />
+                    </div>
+                    <div className='text-gray-600 p-4 bg-white rounded-b-2xl'>
+                        <h2>Resort</h2>
+                    </div>
+                </div>
+                <div className='grid col-span-1'>
+                    <div className="h-[40vh] w-full relative">
+                        <Image
+                            src={"/banners/banner-restaurant.jpg"}
+                            alt="woman-image"
+                            fill
+                            className="rounded-t-2xl object-cover"
+                        />
+                    </div>
+                    <div className='text-gray-600 p-4 bg-white rounded-b-2xl'>
+                        <h2>Restaurant</h2>
+                    </div>
+                </div>
+                <div className='grid col-span-1'>
+                    <div className="h-[40vh] w-full relative">
+                        <Image
+                            src={"/banners/banner-air.jpg"}
+                            alt="woman-image"
+                            fill
+                            className="rounded-t-2xl object-cover"
+                        />
+                    </div>
+                    <div className='text-gray-600 p-4 bg-white rounded-b-2xl'>
+                        <h2>Tourism</h2>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
