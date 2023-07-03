@@ -18,7 +18,7 @@ export const Header = (props: Props) => {
                 <div>
                     <button type='button' onClick={() => router.push('/')}>
                         <Image
-                            className="relative drop-shadow-[0_0_0.3rem_red] hover:scale-125 duration-500"
+                            className="relative hover:scale-125 duration-500"
                             src="/logo/red-rich.svg"
                             alt="Red Rich Logo"
                             width={100}

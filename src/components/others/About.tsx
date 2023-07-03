@@ -19,7 +19,7 @@ export const About = (props: Props) => {
 
                 {/* top about  */}
                 <div className='grid grid-cols-3 items-start h-full p-4 gap-4 min-h-[70vh]'>
-                    <div className='col-span-1 h-[70vh]'>
+                    <div className='col-span-3 md:col-span-1 h-[70vh]'>
                         <div className="h-[70vh] w-full relative">
                             <Image
                                 src={"/banners/banner-woman.jpg"}
@@ -29,20 +29,20 @@ export const About = (props: Props) => {
                             />
                         </div>
                     </div>
-                    <div className='grid justify-center items-center col-span-2 h-full'>
-                        <div className='grid gap-4 px-10'>
-                            <h3 className='text-4xl font-bold text-gray-600'>
+                    <div className='grid justify-center items-center col-span-3 md:col-span-2 h-full'>
+                        <div className='grid gap-4 px-4 md:px-10'>
+                            <h3 className='text-3xl md:text-4xl font-bold text-gray-600'>
                                 It&rsquo;s Your World</h3>
                             <p className='text-lg font-semibold'>
                                 Connect with people and interests across Meta technologies to help you make your world your own.
                             </p>
-                            <button className='w-28 p-2 bg-red-600 rounded-full font-semibold text-white'>Learn More</button>
+                            <button className='w-28 p-1 md:p-2 bg-red-600 text-sm rounded-full font-semibold text-white'>Learn More</button>
                         </div>
                     </div>
                 </div>
 
                 {/* logo and motto  */}
-                <div className='grid items-center gap-4 w-full py-20 justify-center'>
+                <div className='grid items-center gap-4 w-full py-8 md:py-20 justify-center'>
                     <div className='w-full flex justify-center'>
                         <Image
                             width={150}
@@ -53,7 +53,7 @@ export const About = (props: Props) => {
                             className="object-cover p-2"
                         />
                     </div>
-                    <h3 className='text-4xl text-gray-600 max-w-xl text-center font-semibold'>
+                    <h3 className='text-xl px-4 md:text-4xl text-gray-600 max-w-xl text-center font-semibold'>
                         RedRich builds technologies that help people invest, discover the world and grow businesses.
                     </h3>
                 </div>
@@ -62,13 +62,13 @@ export const About = (props: Props) => {
                 <div className='p-4'>
                     <div className='h-[50vh] w-full rounded-2xl grid grid-cols-2 bg-gray-600'>
                         <div className='bg-[#510D10] grid items-center rounded-l-2xl'>
-                            <div className='grid gap-4 px-10'>
-                                <h3 className='text-2xl font-semibold text-gray-100'>
+                            <div className='grid gap-4 px-4 md:px-10'>
+                                <h3 className='text-lg md:text-2xl font-semibold text-gray-100'>
                                     Who Are We?</h3>
-                                <p className='text-lg font-semibold text-white'>
+                                <p className='text-sm md:text-lg font-semibold text-white'>
                                     RedRich is a sister group of <span className='border-b hover:border-[red] hover:text-[red]'>Royal Ahnafia Limited.</span> RedRich offers luxarious services like Resort, Resturent, Camping, Adventure, Sports and many more.
                                 </p>
-                                <button className='w-28 p-2 text-[#510D10] rounded-full font-semibold bg-white'>Learn More</button>
+                                <button className='w-28 p-1 md:p-2 text-[#510D10] rounded-full font-semibold text-sm md:te bg-white'>Learn More</button>
                             </div>
                         </div>
 
@@ -108,7 +108,7 @@ export const About = (props: Props) => {
             </div>
 
             {/* details  */}
-            <div className='max-w-6xl mx-auto py-8 grid grid-cols-2 justify-between gap-4'>
+            <div className='max-w-6xl mx-auto px-4 py-4 md:py-8 grid grid-cols-1 md:grid-cols-2 justify-between gap-4'>
                 <div className='h-[18vh] w-full rounded-2xl grid grid-cols-4 bg-white'>
                     <div className='rounded-l-2xl col-span-1'>
                         <div className="h-[18vh] w-full relative">
@@ -154,7 +154,7 @@ export const About = (props: Props) => {
 
             {/* motto 2 */}
             <div>
-                <div className='grid items-center gap-4 w-full py-20 justify-center'>
+                <div className='grid items-center gap-4 w-full py-8 md:py-20 justify-center'>
                     {/* <div className='w-full flex justify-center'>
                         <Image
                             width={150}
@@ -180,7 +180,7 @@ export const About = (props: Props) => {
             </div>
 
             {/* newsletters  */}
-            <div className='max-w-6xl grid grid-cols-3 gap-8 mx-auto w-full p-4'>
+            <div className='max-w-6xl grid grid-cols-3 gap-4 md:gap-8 mx-auto w-full p-4'>
                 <div className='grid col-span-1'>
                     <div className="h-[40vh] w-full relative">
                         <Image
