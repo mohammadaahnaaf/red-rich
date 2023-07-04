@@ -47,7 +47,7 @@ export const About = (props: Props) => {
                         <Image
                             width={150}
                             height={150}
-                            src={"/logo/red-rich.svg"}
+                            src={"/logo/red-rich-logo.svg"}
                             alt="logo-image"
                             // fill
                             className="object-cover p-2"
