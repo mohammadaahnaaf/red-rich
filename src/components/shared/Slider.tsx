@@ -11,7 +11,7 @@ export const Slider = (props: Props) => {
     let image = props.images
 
     return (
-        <div className="relative w-full h-ful bg-black bg-opacity-40">
+        <div className="relative w-full h-ful bg-black bg-opacity-10">
             {/* <div className='absolute mx-auto w-full items-center grid justify-left h-full'>
                 <h1 className='text-6xl p-5 opacity-50 uppercase ring-2 ring-white font-semibold'>Welcome To Redrich Resort</h1>
             </div> */}
@@ -37,7 +37,7 @@ export const Slider = (props: Props) => {
                         <Image
                             fill
                             className='object-fill h-full w-full select-none cursor-pointer'
-                            src={img} alt='image'
+                            src={img} alt={`image ${index + 1}`}
                         />
                     </div>
                 ))}

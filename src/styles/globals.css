@@ -36,6 +36,11 @@ video::-webkit-media-controls {
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -52,11 +57,12 @@ video::-webkit-media-controls {
 }
 
 body {
-  cursor: url('/logo/cursor.svg'), default;
+  scroll-behavior: smooth!;
+  /* cursor: url('/logo/cursor.svg'), default; */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+    transparent,
+    rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 
 }
 

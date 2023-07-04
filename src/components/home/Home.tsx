@@ -11,10 +11,12 @@ type Props = {}
 export const Home = (props: Props) => {
 
     const images = [
-        "/banners/banner-pool9.jpg",
-        "/banners/banner-pool02.jpg",
+        "/banners/banner-woman12.jpg",
+        "/banners/banner-pool3.jpg",
         "/banners/banner-woman.jpg",
         "/banners/banner-pool.jpg",
+        "/banners/banner-air.jpg",
+        "/banners/banner-woman11.jpg",
     ]
 
     return (
