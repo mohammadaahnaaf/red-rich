@@ -33,7 +33,7 @@ export const Slider = (props: Props) => {
             // onClickThumb={onClickThumb}
             >
                 {image?.map((img, index) => (
-                    <div key={index} className='w-full min-h-[80vh]'>
+                    <div key={index} className='w-full min-h-[90vh]'>
                         <Image
                             fill
                             className='object-cover bg-cover h-full w-full select-none cursor-pointer'

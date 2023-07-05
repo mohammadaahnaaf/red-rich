@@ -10,10 +10,15 @@ type Props = {}
 export const Contact = (props: Props) => {
 
     const images = [
-        "/banners/banner-pool9.jpg",
-        "/banners/banner-pool02.jpg",
-        "/banners/banner-woman.jpg",
-        "/banners/banner-pool.jpg",
+        "/banners/home/woman-travel.jpg",
+        "/banners/home/banner-resort.jpg",
+        "/banners/banner-woman11.jpg",
+        "/banners/home/out-camp2.jpg",
+        "/banners/home/out-camp3.jpg",
+        "/banners/home/woman-travel3.jpg",
+        "/banners/home/banner-sea2.jpg",
+        "/banners/home/woman-travel2.jpg",
+        "/banners/home/out-camp.jpg",
     ]
 
     return (

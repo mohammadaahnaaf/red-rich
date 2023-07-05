@@ -12,8 +12,8 @@ export const Header = (props: Props) => {
             <header className='px-4 py-2 max-w-7xl mx-auto flex items-center justify-center gap-8'>
                 <div className='md:flex hidden gap-8 items-center font-semibold'>
                     <Link className='hover:scale-125 duration-200 hover:text-black text-white' href='/resort'>Resort</Link>
-                    <Link className='hover:scale-125 duration-200 hover:text-black text-white' href='/tourism'>Tourism</Link>
-                    <Link className='hover:scale-125 duration-200 hover:text-black text-white' href='/resturant'>Resturent</Link>
+                    <Link className='hover:scale-125 duration-200 hover:text-black text-white' href='/tour'>Tourism</Link>
+                    <Link className='hover:scale-125 duration-200 hover:text-black text-white' href='/restaurant'>Resturent</Link>
                 </div>
                 <div>
                     <Link href='/'>
