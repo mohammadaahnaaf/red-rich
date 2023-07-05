@@ -143,7 +143,7 @@ export const Home = (props: Props) => {
             <div className='flex w-full bg-white shadow-md overflow-hidden mx-auto'>
                 <div className="flex flex-col">
                     <div className="relative">
-                        <video className="w-full" controls={true} autoPlay={true} loop={true} muted={mute}>
+                        <video className="w-full z-0" controls={true} autoPlay={true} loop={true} muted={mute}>
                             <source
                                 // src='https://youtu.be/Y-uMPL5qcKE?t=32'
                                 src="/videos/video2.mp4"
@@ -154,7 +154,7 @@ export const Home = (props: Props) => {
                         <button
                             type='button'
                             onClick={() => setMute(!mute)}
-                            className='z-20 absolute w-full top-0 flex items-center h-full justify-center bg-white hover:bg-opacity-0 bg-opacity-5 text-transparent'>Mute</button>
+                            className='z-10 absolute w-full top-0 flex items-center h-full justify-center bg-white hover:bg-opacity-0 bg-opacity-5 text-transparent'>Mute</button>
                     </div>
                 </div>
             </div>

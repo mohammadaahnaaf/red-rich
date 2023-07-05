@@ -7,6 +7,12 @@
   /* scrollbar-color: var(--secondary) var(--primary); */
 }
 
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   cursor: url('/logo/cursor.svg'), default;
@@ -57,12 +63,12 @@ video::-webkit-media-controls {
 }
 
 body {
-  scroll-behavior: smooth!;
+  scroll-behavior: smooth !;
   /* cursor: url('/logo/cursor.svg'), default; */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
-    transparent,
-    rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 
 }
 
