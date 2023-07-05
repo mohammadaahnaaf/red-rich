@@ -45,9 +45,9 @@ export const About = (props: Props) => {
                 <div className='grid items-center gap-4 w-full py-8 md:py-20 justify-center'>
                     <div className='w-full flex justify-center'>
                         <Image
-                            width={150}
-                            height={150}
-                            src={"/logo/red-rich-logo.svg"}
+                            width={200}
+                            height={200}
+                            src={"/logo/red-rich-red.svg"}
                             alt="logo-image"
                             // fill
                             className="object-cover p-2"
@@ -60,15 +60,15 @@ export const About = (props: Props) => {
 
                 {/* middle about */}
                 <div className='p-4'>
-                    <div className='h-[50vh] w-full rounded-2xl grid grid-cols-2 bg-gray-600'>
-                        <div className='bg-[#510D10] grid items-center rounded-l-2xl'>
-                            <div className='grid gap-4 px-4 md:px-10'>
+                    <div className='min-h-[50vh] w-full rounded-2xl grid grid-cols-1 md:grid-cols-2 bg-gray-600'>
+                        <div className='bg-[#510D10] order-last md:order-first grid items-center rounded-b-2xl md:rounded-r-none md:rounded-l-2xl'>
+                            <div className='grid gap-4 py-8 text-center md:text-left md:py-0 px-4 md:px-10'>
                                 <h3 className='text-lg md:text-2xl font-semibold text-gray-100'>
                                     Who Are We?</h3>
                                 <p className='text-sm md:text-lg font-semibold text-white'>
                                     RedRich is a sister group of <span className='border-b hover:border-[red] hover:text-[red]'>Royal Ahnafia Limited.</span> RedRich offers luxarious services like Resort, Resturent, Camping, Adventure, Sports and many more.
                                 </p>
-                                <button className='w-28 p-1 md:p-2 text-[#510D10] rounded-full font-semibold text-sm md:te bg-white'>Learn More</button>
+                                <button className='w-28 mx-auto md:mx-0 p-1 md:p-2 text-[#510D10] rounded-full font-semibold text-sm md:te bg-white'>Learn More</button>
                             </div>
                         </div>
 
@@ -78,7 +78,7 @@ export const About = (props: Props) => {
                                     src={"/banners/banner-woman.jpg"}
                                     alt="woman-image"
                                     fill
-                                    className="rounded-r-2xl object-cover"
+                                    className="rounded-t-2xl md:rounded-l-none md:rounded-r-2xl object-cover"
                                 />
                             </div>
                         </div>
@@ -155,16 +155,6 @@ export const About = (props: Props) => {
             {/* motto 2 */}
             <div>
                 <div className='grid items-center gap-4 w-full py-8 md:py-20 justify-center'>
-                    {/* <div className='w-full flex justify-center'>
-                        <Image
-                            width={150}
-                            height={150}
-                            src={"/logo/red-rich.svg"}
-                            alt="logo-image"
-                            // fill
-                            className="object-cover p-2"
-                        />
-                    </div> */}
                     <h3 className='text-2xl text-gray-600 max-w-lg text-center font-semibold'>
                         Keeping people safe and making a positive impact
                     </h3>

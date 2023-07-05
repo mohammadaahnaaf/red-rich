@@ -23,8 +23,8 @@ export const Home = (props: Props) => {
         <div className='grid'>
             <Slider images={images} />
 
-            <div className='overscroll-y-auto py-8 bg-white w-full h-screen'>
-                <div className='max-w-6xl grid grid-cols-3 gap-4 md:gap-8 mx-auto w-full p-4'>
+            <div className='overscroll-y-auto py-8 bg-white w-full min-h-screen'>
+                <div className='max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mx-auto w-full p-4'>
                     <div className='grid col-span-1'>
                         <div className="h-[40vh] w-full relative">
                             <Image
