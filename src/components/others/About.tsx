@@ -109,7 +109,7 @@ export const About = (props: Props) => {
 
             {/* details  */}
             <div className='max-w-6xl mx-auto px-4 py-4 md:py-8 grid grid-cols-1 md:grid-cols-2 justify-between gap-4'>
-                <div className='h-[18vh] w-full rounded-2xl grid grid-cols-4 bg-white'>
+                <div className='h-[18vh] w-full rounded-2xl grid grid-cols-3 md:grid-cols-4 bg-white'>
                     <div className='rounded-l-2xl col-span-1'>
                         <div className="h-[18vh] w-full relative">
                             <Image
@@ -120,7 +120,7 @@ export const About = (props: Props) => {
                             />
                         </div>
                     </div>
-                    <div className='bg-[#510D10] bg-opacity-20 grid items-center col-span-3 rounded-r-2xl'>
+                    <div className='bg-[#510D10] bg-opacity-20 grid items-center col-span-2 md:col-span-3 rounded-r-2xl'>
                         <div className='grid gap-4 px-10'>
                             <h3 className='text-lg font-semibold text-[#510D10]'>
                                 What Is RedRich?
@@ -129,7 +129,7 @@ export const About = (props: Props) => {
                     </div>
                 </div>
 
-                <div className='h-[18vh] w-full rounded-2xl grid grid-cols-4 bg-white'>
+                <div className='h-[18vh] w-full rounded-2xl grid grid-cols-3 md:grid-cols-4 bg-white'>
                     <div className='rounded-l-2xl col-span-1'>
                         <div className="h-[18vh] w-full relative">
                             <Image
@@ -141,7 +141,7 @@ export const About = (props: Props) => {
                         </div>
                     </div>
 
-                    <div className='bg-[#510D10] bg-opacity-20 grid items-center col-span-3 rounded-r-2xl'>
+                    <div className='bg-[#510D10] bg-opacity-20 grid items-center col-span-2 md:col-span-3 rounded-r-2xl'>
                         <div className='grid gap-4 px-10'>
                             <h3 className='text-lg font-semibold text-[#510D10]'>
                                 What RedRich Does?
@@ -154,7 +154,7 @@ export const About = (props: Props) => {
 
             {/* motto 2 */}
             <div>
-                <div className='grid items-center gap-4 w-full py-8 md:py-20 justify-center'>
+                <div className='grid items-center gap-4 w-full px-4 md:px-0 py-8 md:py-20 justify-center'>
                     <h3 className='text-2xl text-gray-600 max-w-lg text-center font-semibold'>
                         Keeping people safe and making a positive impact
                     </h3>
@@ -170,7 +170,7 @@ export const About = (props: Props) => {
             </div>
 
             {/* newsletters  */}
-            <div className='max-w-6xl grid grid-cols-3 gap-4 md:gap-8 mx-auto w-full p-4'>
+            <div className='max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mx-auto w-full p-4'>
                 <div className='grid col-span-1'>
                     <div className="h-[40vh] w-full relative">
                         <Image
