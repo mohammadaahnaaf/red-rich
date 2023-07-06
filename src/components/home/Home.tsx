@@ -33,7 +33,15 @@ export const Home = (props: Props) => {
         <div className='grid'>
             <Slider images={images} />
 
-            <div className='overscroll-y-auto py-8 bg-white w-full min-h-screen'>
+            <div className='overscroll-y-auto py-8 bg-white w-full'>
+
+                <div className='mx-auto grid items-center gap-2 max-w-xl py-8 md:py-16'>
+                    <h2 className='text-center text-3xl text-[red] font-semibold'>Our Services</h2>
+                    <p className='text-center text-lg text-gray-500 font-semibold'>
+                        Find your best detination for hangout, picnic and holidays. We provide world class resort, hotel, restaurants, tourist spots.
+                    </p>
+                </div>
+
                 <div className='max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mx-auto w-full p-4'>
                     <div className='grid col-span-1'>
                         <div className="h-[40vh] w-full relative">
