@@ -12,7 +12,7 @@ export const About = (props: Props) => {
     const [mute, setMute] = useState(true)
 
     return (
-        <div className='bg-gray-100'>
+        <div className='bg-gray-100 pt-24'>
 
             <div className='max-w-6xl py-8 mx-auto text-black'>
                 {/* <h2 className='text-gray-600 text-3xl text-center py-8 font-semibold'>ABOUT REDRICH</h2> */}
