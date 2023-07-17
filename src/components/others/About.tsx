@@ -102,7 +102,8 @@ export const About = (props: Props) => {
                         <button
                             type='button'
                             onClick={() => setMute(!mute)}
-                            className='z-20 absolute w-full top-0 flex items-center h-full justify-center bg-white hover:bg-opacity-0 bg-opacity-5 text-transparent'>Mute</button>
+                            className='z-20 absolute w-full top-0 flex items-center h-full justify-center bg-white hover:bg-opacity-0 bg-opacity-5 text-transparent'>
+                            Mute</button>
                     </div>
                 </div>
             </div>

@@ -1,16 +1,18 @@
 import { Footer, Header } from '@redrich/shared'
-import React from 'react'
+import React, { useState } from 'react'
+import { Animation } from './Animation'
 
 type Props = {
     children: any
 }
 
 export const Layout = (props: Props) => {
+    const [open, setOpen] = useState(false)
     return (
-        <main className='scroll-smooth'>
-            <Header />
+        <>
+            <Header setLink={(i: any) => setOpen(i)} />
             {props.children}
             <Footer />
-        </main>
+        </>
     )
 }
