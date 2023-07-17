@@ -212,6 +212,24 @@ export const About = (props: Props) => {
                     </div>
                 </div>
             </div>
+
+            {/* sister companys  */}
+            <div>
+                <div className='max-w-6xl w-full mx-auto grid grid-cols-4 gap-4 py-8 justify-center items-center'>
+                    <div className='relative h-36'>
+                        <Image src='/logo/red-rich-red.svg' fill className='w-full h-full p-4' alt='' />
+                    </div>
+                    <div className='relative h-36'>
+                        <Image src='/logo/infopedia.svg' fill className='w-full h-full p-4' alt='' />
+                    </div>
+                    <div className='relative h-36'>
+                        <Image src='/logo/greenlife.svg' fill className='w-full h-full p-4' alt='' />
+                    </div>
+                    <div className='relative h-36'>
+                        <Image src='/logo/eagle.png' fill className='w-full h-full p-4' alt='' />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

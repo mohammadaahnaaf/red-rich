@@ -7,10 +7,10 @@ type Props = {
 }
 
 export const Layout = (props: Props) => {
-    const [open, setOpen] = useState(false)
+    // const [open, setOpen] = useState(false)
     return (
         <>
-            <Header setLink={(i: any) => setOpen(i)} />
+            <Header />
             {props.children}
             <Footer />
         </>

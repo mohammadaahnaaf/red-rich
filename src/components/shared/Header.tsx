@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import React from 'react'
 
 type Props = {
-    setLink: any
+    // setLink: any
 }
 
 const styles = {
@@ -17,7 +17,7 @@ export const Header = (props: Props) => {
 
     function handleLink(i: string) {
         router.push(i)
-        props.setLink(true)
+        // props.setLink(true)
 
     }
 
