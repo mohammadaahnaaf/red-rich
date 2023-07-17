@@ -214,19 +214,20 @@ export const About = (props: Props) => {
             </div>
 
             {/* sister companys  */}
-            <div>
-                <div className='max-w-6xl w-full mx-auto grid grid-cols-4 gap-4 py-8 justify-center items-center'>
-                    <div className='relative h-36'>
-                        <Image src='/logo/red-rich-red.svg' fill className='w-full h-full p-4' alt='' />
+            <div className='max-w-6xl py-8 w-full mx-auto'>
+                <h2 className='text-center w-full text-2xl text-red-800 font-semibold py-4'>Our Sister Organizations</h2>
+                <div className='flex gap-8 py-4 justify-center items-center'>
+                    <div className='relative w-36 h-36'>
+                        <Image src='/logo/red-rich-red.svg' fill className='w-full h-full p-4 rounded-xl bg-white' alt='' />
                     </div>
-                    <div className='relative h-36'>
-                        <Image src='/logo/infopedia.svg' fill className='w-full h-full p-4' alt='' />
+                    <div className='relative w-36  h-36'>
+                        <Image src='/logo/greenlife.svg' fill className='w-full h-full p-4 rounded-xl bg-white' alt='' />
                     </div>
-                    <div className='relative h-36'>
-                        <Image src='/logo/greenlife.svg' fill className='w-full h-full p-4' alt='' />
+                    <div className='relative w-36  h-36'>
+                        <Image src='/logo/infopedia.svg' fill className='w-full h-full p-4 rounded-xl bg-white' alt='' />
                     </div>
-                    <div className='relative h-36'>
-                        <Image src='/logo/eagle.png' fill className='w-full h-full p-4' alt='' />
+                    <div className='relative w-36  h-36'>
+                        <Image src='/logo/vasilia.svg' fill className='w-full h-full p-4 rounded-xl bg-white' alt='' />
                     </div>
                 </div>
             </div>
