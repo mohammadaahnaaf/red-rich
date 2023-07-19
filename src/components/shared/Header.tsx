@@ -45,7 +45,7 @@ export const Header = (props: Props) => {
     return (
         <div
             id='headers'
-            className={`transition ease-linear duration-600 bg-white z-40 backdrop-blur-sm ${visable ? 'bg-opacity-40' : 'opacity-1 bg-[red]'
+            className={`transition ease-linear duration-600 z-40 backdrop-blur-sm ${visable ? 'bg-opacity-40 bg-white' : 'opacity-1 bg-[red]'
                 }`}
         // className='bg-white bg-opacity-40 z-40 backdrop-blur-sm'
         >
