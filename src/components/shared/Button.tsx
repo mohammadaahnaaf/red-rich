@@ -1,18 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 type Props = {
     title: string;
-    onClick: any
+    onClick: any;
+    time: number
 }
 
 export const Button = (props: Props) => {
 
+    const [view, setView] = useState(false)
+    useEffect(() => {
+        function open() {
+            setView(true)
+        }
+        setTimeout(() => { open() }, props.time)
+    }, [props])
+
     function handleClick() {
         props.onClick()
     }
-    return (
+
+    return view ? (
         <button
-            className='p-4 relative flex text-red-600'
+            className='p-4 h-28 items-center w-full justify-center  relative flex text-red-600'
         // onClick={handleClick}
         >
             <span className="animate-ping delay-150 transition z-10 h-20 w-20 absolute rounded-full bg-yellow-300 opacity-75"></span>
@@ -24,16 +34,27 @@ export const Button = (props: Props) => {
             </span>
 
         </button>
+    ) : (
+        <div className='h-28' />
     )
 }
 export const ButtonStar = (props: Props) => {
 
+    const [view, setView] = useState(false)
+    useEffect(() => {
+        function open() {
+            setView(true)
+        }
+        setTimeout(() => { open() }, props.time)
+    }, [props])
+
     function handleClick() {
         props.onClick()
     }
-    return (
+
+    return view ? (
         <button
-            className='p-4 relative flex text-red-600'
+            className='p-4 h-28 items-center w-full justify-center  relative flex text-red-600'
         // onClick={handleClick}
         >
             <span className="animate-ping delay-150 transition z-10 h-20 w-20 absolute rounded-full bg-teal-300 opacity-75"></span>
@@ -44,16 +65,27 @@ export const ButtonStar = (props: Props) => {
             </span>
 
         </button>
+    ) : (
+        <div className='h-28' />
     )
 }
 export const ButtonSun = (props: Props) => {
 
+    const [view, setView] = useState(false)
+    useEffect(() => {
+        function open() {
+            setView(true)
+        }
+        setTimeout(() => { open() }, props.time)
+    }, [props])
+
     function handleClick() {
         props.onClick()
     }
-    return (
+
+    return view ? (
         <button
-            className='p-4 relative flex text-red-600'
+            className='p-4 h-28 items-center w-full justify-center  relative flex text-red-600'
         // onClick={handleClick}
         >
             <span className="animate-ping delay-150 transition z-10 h-20 w-20 absolute rounded-full bg-red-300 opacity-75"></span>
@@ -64,16 +96,27 @@ export const ButtonSun = (props: Props) => {
             </span>
 
         </button>
+    ) : (
+        <div className='h-28' />
     )
 }
 export const ButtonCloud = (props: Props) => {
 
+    const [view, setView] = useState(false)
+    useEffect(() => {
+        function open() {
+            setView(true)
+        }
+        setTimeout(() => { open() }, props.time)
+    }, [props])
+
     function handleClick() {
         props.onClick()
     }
-    return (
+
+    return view ? (
         <button
-            className='p-4 relative flex text-red-600'
+            className='p-4 w-full justify-center h-28 items-center relative flex text-red-600'
         // onClick={handleClick}
         >
             <span className="animate-ping delay-150 transition z-10 h-20 w-20 absolute rounded-full bg-blue-300 opacity-75"></span>
@@ -85,5 +128,7 @@ export const ButtonCloud = (props: Props) => {
             </span>
 
         </button>
+    ) : (
+        <div className='h-28' />
     )
 }
