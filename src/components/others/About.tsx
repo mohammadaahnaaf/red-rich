@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 import { Inter } from 'next/font/google'
 import { Header, Slider } from '@redrich/shared'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -60,7 +61,7 @@ export const About = (props: Props) => {
 
                 {/* middle about */}
                 <div className='p-4'>
-                    <div className='min-h-[50vh] w-full rounded-2xl grid grid-cols-1 md:grid-cols-2 bg-gray-600'>
+                    <div className='min-h-[50vh] w-full rounded-3xl grid grid-cols-1 md:grid-cols-2 bg-gray-600'>
                         <div className='bg-[#510D10] order-last md:order-first grid items-center rounded-b-2xl md:rounded-r-none md:rounded-l-2xl'>
                             <div className='grid gap-4 py-8 text-center md:text-left md:py-0 px-4 md:px-10'>
                                 <h3 className='text-lg md:text-2xl font-semibold text-gray-100'>
@@ -110,7 +111,7 @@ export const About = (props: Props) => {
 
             {/* details  */}
             <div className='max-w-6xl mx-auto px-4 py-4 md:py-8 grid grid-cols-1 md:grid-cols-2 justify-between gap-4'>
-                <div className='h-[18vh] w-full rounded-2xl grid grid-cols-3 md:grid-cols-4 bg-white'>
+                <div className='h-[18vh] w-full rounded-2xl grid grid-cols-3 md:grid-cols-4 shadow-lg bg-white'>
                     <div className='rounded-l-2xl col-span-1'>
                         <div className="h-[18vh] w-full relative">
                             <Image
@@ -130,7 +131,7 @@ export const About = (props: Props) => {
                     </div>
                 </div>
 
-                <div className='h-[18vh] w-full rounded-2xl grid grid-cols-3 md:grid-cols-4 bg-white'>
+                <div className='h-[18vh] w-full rounded-2xl grid grid-cols-3 md:grid-cols-4 shadow-lg bg-white'>
                     <div className='rounded-l-2xl col-span-1'>
                         <div className="h-[18vh] w-full relative">
                             <Image
@@ -159,8 +160,8 @@ export const About = (props: Props) => {
                     <h3 className='text-2xl text-gray-600 max-w-lg text-center font-semibold'>
                         Keeping people safe and making a positive impact
                     </h3>
-                    <button className='flex items-center justify-center gap-1 font-medium cursor-pointer text-gray-600 hover:text-gray-500' type='button'>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 p-0.5 ring-1 ring-gray-400 rounded-full">
+                    <button className='flex hover:text-red-600 duration-150 items-center justify-center gap-1 font-medium cursor-pointer text-gray-600' type='button'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 p-0.5 text-gray-600 bg-red-200 rounded-full">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                         </svg>
                         <span>
@@ -172,7 +173,7 @@ export const About = (props: Props) => {
 
             {/* newsletters  */}
             <div className='max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mx-auto w-full p-4'>
-                <div className='grid col-span-1'>
+                <div className='grid col-span-1 hover:scale-105 duration-300 rounded-xl hover:bg-red-50 bg-white shadow-lg'>
                     <div className="h-[40vh] w-full relative">
                         <Image
                             src={"/banners/banner-pool3.jpg"}
@@ -181,11 +182,11 @@ export const About = (props: Props) => {
                             className="rounded-t-2xl object-cover"
                         />
                     </div>
-                    <div className='text-gray-600 p-4 bg-white rounded-b-2xl'>
+                    <div className='text-gray-600 p-4 bg-white text-center text-lg font-semibold rounded-b-2xl'>
                         <h2>Resort</h2>
                     </div>
                 </div>
-                <div className='grid col-span-1'>
+                <div className='grid col-span-1 hover:scale-105 duration-300 rounded-xl hover:bg-red-50 bg-white shadow-lg'>
                     <div className="h-[40vh] w-full relative">
                         <Image
                             src={"/banners/banner-restaurant.jpg"}
@@ -194,11 +195,11 @@ export const About = (props: Props) => {
                             className="rounded-t-2xl object-cover"
                         />
                     </div>
-                    <div className='text-gray-600 p-4 bg-white rounded-b-2xl'>
+                    <div className='text-gray-600 p-4 bg-white text-center text-lg font-semibold rounded-b-2xl'>
                         <h2>Restaurant</h2>
                     </div>
                 </div>
-                <div className='grid col-span-1'>
+                <div className='grid col-span-1 hover:scale-105 duration-300 rounded-xl hover:bg-red-50 bg-white shadow-lg'>
                     <div className="h-[40vh] w-full relative">
                         <Image
                             src={"/banners/banner-air.jpg"}
@@ -207,7 +208,7 @@ export const About = (props: Props) => {
                             className="rounded-t-2xl object-cover"
                         />
                     </div>
-                    <div className='text-gray-600 p-4 bg-white rounded-b-2xl'>
+                    <div className='text-gray-600 p-4 bg-white text-center text-lg font-semibold rounded-b-2xl'>
                         <h2>Tourism</h2>
                     </div>
                 </div>
@@ -217,17 +218,25 @@ export const About = (props: Props) => {
             <div className='max-w-6xl py-8 w-full mx-auto'>
                 <h2 className='text-center w-full text-2xl text-red-800 font-semibold py-4'>Our Sister Organizations</h2>
                 <div className='flex gap-8 py-4 justify-center items-center'>
-                    <div className='relative w-36 h-36'>
-                        <Image src='/logo/red-rich-red.svg' fill className='w-full h-full p-4 rounded-xl bg-white' alt='' />
+                    <div className='relative w-36 h-36 hover:scale-105 duration-300 rounded-xl hover:bg-red-50 bg-white shadow-lg'>
+                        <Image src='/logo/red-rich-red.svg' fill className='w-full h-full p-4 rounded-xl' alt='' />
+                        <Link className='text-transparent w-full h-full absolute' href='https://red-rich.vercel.app'></Link>
                     </div>
-                    <div className='relative w-36  h-36'>
-                        <Image src='/logo/greenlife.svg' fill className='w-full h-full p-4 rounded-xl bg-white' alt='' />
+                    <div className='relative w-36  h-36 hover:scale-105 duration-300 rounded-xl hover:bg-red-50 bg-white shadow-lg'>
+                        <Image src='/logo/greenlife.svg' fill className='w-full h-full p-4 rounded-xl' alt='' />
+                        <Link className='text-transparent w-full h-full absolute' href='#'></Link>
                     </div>
-                    <div className='relative w-36  h-36'>
-                        <Image src='/logo/infopedia.svg' fill className='w-full h-full p-4 rounded-xl bg-white' alt='' />
+                    <div className='relative w-36  h-36 hover:scale-105 duration-300 rounded-xl hover:bg-red-50 bg-white shadow-lg'>
+                        <Image src='/logo/infopedia.svg' fill className='w-full h-full p-4 rounded-xl' alt='' />
+                        <Link className='text-transparent w-full h-full absolute' href='#'></Link>
                     </div>
-                    <div className='relative w-36  h-36'>
-                        <Image src='/logo/vasilia.svg' fill className='w-full h-full p-4 rounded-xl bg-white' alt='' />
+                    <div className='relative w-36  h-36 hover:scale-105 duration-300 rounded-xl hover:bg-red-50 bg-white shadow-lg'>
+                        <Image src='/logo/vasilia.svg' fill className='w-full h-full p-4 rounded-xl' alt='' />
+                        <Link className='text-transparent w-full h-full absolute' href='https://ahnafyaes.vercel.app'></Link>
+                    </div>
+                    <div className='relative w-36  h-36 hover:scale-105 duration-300 rounded-xl hover:bg-red-50 bg-white shadow-lg'>
+                        <Image src='/logo/puzzellia.svg' fill className='w-full h-full rounded-xl p-4' alt='' />
+                        <Link className='text-transparent w-full h-full absolute' href='https://puzzellia.vercel.app'></Link>
                     </div>
                 </div>
             </div>
