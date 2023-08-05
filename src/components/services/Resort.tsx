@@ -1,61 +1,44 @@
-import { Button, ButtonCloud, ButtonStar, ButtonSun } from '@redrich/shared'
+import { images } from '@redrich-data/slideImages'
+import { Slider } from '@redrich/shared'
 import React from 'react'
 
 type Props = {}
 
 export const Resort = (props: Props) => {
   return (
-    <div className='min-h-screen grid grid-cols-4 items-start justify-evenly bg-white w-full pt-32'>
-      <Button
-        title='Resort'
-        time={0}
-        onClick={undefined} />
-      <ButtonStar
-        title='Resort'
-        time={250}
-        onClick={undefined} />
-      <ButtonSun
-        title='Resort'
-        time={500}
-        onClick={undefined} />
-      <ButtonCloud
-        title='Resort'
-        time={750}
-        onClick={undefined} />
+    <div className='w-full'>
+      <Slider images={images} />
+      <div className='bg-white py-4'>
+        <div className='max-w-6xl mx-auto w-full p-4 bg-pink-100 rounded-lg'>
+          <div className='grid grid-cols-2 gap-2'>
+            <div>
+              <label className='text-red-800 text-sm font-semibold mb-2'>Full Name</label>
+              <input className='p-2.5 w-full' type='text' placeholder='Your Name' />
+            </div>
+            <div>
+            <label className='text-red-800 text-sm font-semibold mb-2'>Full Name</label>
+              <input className='p-2.5 w-full' type='text' placeholder='Your Name' />
+            </div>
+            <div>
+            <label className='text-red-800 text-sm font-semibold mb-2'>Full Name</label>
+              <input className='p-2.5 w-full' type='text' placeholder='Your Name' />
+            </div>
+            <div>
+            <label className='text-red-800 text-sm font-semibold mb-2'>Full Name</label>
+              <input className='p-2.5 w-full' type='text' placeholder='Your Name' />
+            </div>
+            <div>
+            <label className='text-red-800 text-sm font-semibold mb-2'>Full Name</label>
+              <input className='p-2.5 w-full' type='text' placeholder='Your Name' />
+            </div>
+            <div>
+            <label className='text-red-800 text-sm font-semibold mb-2'>Full Name</label>
+              <input className='p-2.5 w-full' type='text' placeholder='Your Name' />
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <Button
-        title='Resort'
-        time={1750}
-        onClick={undefined} />
-      <ButtonStar
-        title='Resort'
-        time={1500}
-        onClick={undefined} />
-      <ButtonSun
-        title='Resort'
-        time={1250}
-        onClick={undefined} />
-      <ButtonCloud
-        title='Resort'
-        time={1000}
-        onClick={undefined} />
-
-      <Button
-        title='Resort'
-        time={2000}
-        onClick={undefined} />
-      <ButtonStar
-        title='Resort'
-        time={2250}
-        onClick={undefined} />
-      <ButtonSun
-        title='Resort'
-        time={2500}
-        onClick={undefined} />
-      <ButtonCloud
-        title='Resort'
-        time={2750}
-        onClick={undefined} />
     </div>
   )
 }

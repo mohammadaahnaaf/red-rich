@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { Inter } from 'next/font/google'
 import { Footer, Header, Slider } from '@redrich/shared'
+import { images } from '@redrich-data/slideImages'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,24 +11,6 @@ type Props = {}
 export const Home = (props: Props) => {
 
     const [mute, setMute] = useState(true)
-
-    const images = [
-        // "/banners/banner-woman13.jpg",
-        // "/banners/banner-pool3.jpg",
-        // "/banners/banner-woman.jpg",
-        // "/banners/banner-pool.jpg",
-        // "/banners/banner-air.jpg",
-
-        "/banners/home/woman-travel.jpg",
-        "/banners/home/banner-resort.jpg",
-        "/banners/banner-woman11.jpg",
-        "/banners/home/out-camp2.jpg",
-        "/banners/home/out-camp3.jpg",
-        "/banners/home/woman-travel3.jpg",
-        "/banners/home/banner-sea2.jpg",
-        "/banners/home/woman-travel2.jpg",
-        "/banners/home/out-camp.jpg",
-    ]
 
     return (
         <div className='grid'>
@@ -43,7 +26,7 @@ export const Home = (props: Props) => {
                 </div>
 
                 <div className='max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mx-auto w-full p-4'>
-                    <div className='grid col-span-1'>
+                    <div className='grid col-span-1 hover:scale-105 duration-300 bg-[#0A70A9] hover:bg-[black] rounded-2xl shadow-lg'>
                         <div className="h-[40vh] w-full relative">
                             <Image
                                 src={"/banners/banner-pool3.jpg"}
@@ -52,11 +35,11 @@ export const Home = (props: Props) => {
                                 className="rounded-t-2xl object-cover"
                             />
                         </div>
-                        <div className='text-gray-100 text-center font-semibold text-lg p-4 bg-[#0A70A9] rounded-b-2xl'>
-                            <h2>Resort</h2>
+                        <div className='text-gray-100 text-center font-semibold text-lg p-4 rounded-b-2xl'>
+                            <h2>Book Resort</h2>
                         </div>
                     </div>
-                    <div className='grid col-span-1'>
+                    <div className='grid col-span-1 hover:scale-105 duration-300 hover:bg-[black] bg-[red] rounded-2xl shadow-lg'>
                         <div className="h-[40vh] w-full relative">
                             <Image
                                 src={"/banners/banner-restaurant.jpg"}
@@ -65,11 +48,11 @@ export const Home = (props: Props) => {
                                 className="rounded-t-2xl object-cover"
                             />
                         </div>
-                        <div className='text-gray-100 text-center font-semibold text-lg p-4 bg-[#AF1E1F] rounded-b-2xl'>
-                            <h2>Restaurant</h2>
+                        <div className='text-gray-100 text-center font-semibold text-lg p-4 rounded-b-2xl'>
+                            <h2>Book Restaurant</h2>
                         </div>
                     </div>
-                    <div className='grid col-span-1'>
+                    <div className='grid col-span-1 hover:scale-105 duration-300 hover:bg-[black] bg-[#924A21] rounded-2xl shadow-lg'>
                         <div className="h-[40vh] w-full relative">
                             <Image
                                 src={"/banners/banner-air.jpg"}
@@ -78,7 +61,7 @@ export const Home = (props: Props) => {
                                 className="rounded-t-2xl object-cover"
                             />
                         </div>
-                        <div className='text-gray-100 text-center font-semibold text-lg p-4 bg-[#924A21] rounded-b-2xl'>
+                        <div className='text-gray-100 text-center font-semibold text-lg p-4 rounded-b-2xl'>
                             <h2>Tourism</h2>
                         </div>
                     </div>

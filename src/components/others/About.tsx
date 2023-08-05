@@ -66,8 +66,9 @@ export const About = (props: Props) => {
                             <div className='grid gap-4 py-8 text-center md:text-left md:py-0 px-4 md:px-10'>
                                 <h3 className='text-lg md:text-2xl font-semibold text-gray-100'>
                                     Who Are We?</h3>
-                                <p className='text-sm md:text-lg font-semibold text-white'>
-                                    RedRich is a sister group of <span className='border-b hover:border-[red] hover:text-[red]'>Royal Ahnafia Limited.</span> RedRich offers luxarious services like Resort, Resturent, Camping, Adventure, Sports and many more.
+                                <p className='text-sm md:text-lg font-medium text-white'>
+                                    RedRich is a sister group of <span className='border-b hover:border-[red] hover:text-[red]'>Royal Ahnafia Limited. </span>
+                                    RedRich offers luxarious services like Resort, Resturent, Camping, Adventure, Sports and many more.
                                 </p>
                                 <button className='w-28 mx-auto md:mx-0 p-1 md:p-2 text-[#510D10] rounded-full font-semibold text-sm md:te bg-white'>Learn More</button>
                             </div>
