@@ -4,7 +4,7 @@ export const images = [
     // "/banners/banner-woman.jpg",
     // "/banners/banner-pool.jpg",
     // "/banners/banner-air.jpg",
-
+    
     "/banners/home/woman-travel.jpg",
     "/banners/home/banner-resort.jpg",
     "/banners/banner-woman11.jpg",
