@@ -5,6 +5,61 @@ import { RoomCard } from './RoomCard'
 
 type Props = {}
 
+const hotels = [
+  {
+    id: 1,
+    pool: true,
+    title: "Villa Dom",
+    ratting: 4.5,
+    location: "Sajek / Rangamati",
+    price_l: 1000,
+    price_h: 4000,
+    bed: 4,
+    members: 10,
+    b_room: 2,
+    type: "large"
+  },
+  {
+    id: 2,
+    pool: false,
+    title: "Villa Ahnafya",
+    ratting: 4.5,
+    location: "Sajek / Rangamati",
+    price_l: 1000,
+    price_h: 4000,
+    bed: 2,
+    members: 5,
+    b_room: 1,
+    type: 'dual-bed'
+  },
+  {
+    id: 3,
+    pool: true,
+    title: "Villa Fio",
+    ratting: 4.5,
+    location: "Cox's Bazar",
+    price_l: 1000,
+    price_h: 1500,
+    bed: 1,
+    members: 2,
+    b_room: 1,
+    type: 'single'
+  },
+  {
+    id: 4,
+    pool: true,
+    title: "Hotel Abokash",
+    ratting: 4.5,
+    location: "Cox's Bazar",
+    price_l: 1000,
+    price_h: 4000,
+    bed: 3,
+    members: 6,
+    b_room: 2,
+    type: 'family',
+  },
+]
+
 export const Resort = (props: Props) => {
 
   let [resort, setResort] = React.useState<any>({
@@ -35,8 +90,8 @@ export const Resort = (props: Props) => {
         <div className='bg-black bg-opacity-40 py-8 absolute h-full w-full grid items-center top-0'>
           <div className='max-w-6xl mx-auto w-full'>
 
-            <div className='grid grid-cols-3 ring-2 ring-white gap-4 items-center backdrop-blur-sm bg-[black] bg-opacity-20 p-6'>
-              <div className='col-span-3 text-center'>
+            <div className='grid col-span-1 lg:grid-cols-3 lg:ring-2 ring-white gap-4 items-center backdrop-blur-sm bg-[black] bg-opacity-20 p-6'>
+              <div className='lg:col-span-3 text-center'>
                 <h1 className='text-white font-semibold text-2xl'>Book Resort Now</h1>
               </div>
               <div>
@@ -70,12 +125,11 @@ export const Resort = (props: Props) => {
       </div>
 
 
-      <div ref={ahnfya} className='min-h-screen grid items-center p-4 bg-[red] w-full'>
-        <div className='grid grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto w-full p-4 gap-6 items-center'>
-          <RoomCard />
-          <RoomCard />
-          <RoomCard />
-          <RoomCard />
+      <div ref={ahnfya} className='min-h-screen grid items-center p-4 bg-white w-full'>
+        <div className='grid grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto w-full md:p-4 gap-6 items-center'>
+          {hotels.map((item: any, index: number) => (
+            <RoomCard key={index} item={item} />
+          ))}
         </div>
       </div>
 
