@@ -1,6 +1,7 @@
 import { images } from '@redrich-data/slideImages'
 import { Slider } from '@redrich/shared'
 import React from 'react'
+import { RoomCard } from './RoomCard'
 
 type Props = {}
 
@@ -30,6 +31,7 @@ export const Resort = (props: Props) => {
       <div className='relative grid items-center'>
 
         <Slider images={images} />
+
         <div className='bg-black bg-opacity-40 py-8 absolute h-full w-full grid items-center top-0'>
           <div className='max-w-6xl mx-auto w-full'>
 
@@ -68,8 +70,13 @@ export const Resort = (props: Props) => {
       </div>
 
 
-      <div ref={ahnfya} className='h-screen p-4 bg-[blue] w-full'>
-
+      <div ref={ahnfya} className='min-h-screen grid items-center p-4 bg-[red] w-full'>
+        <div className='grid grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto w-full p-4 gap-6 items-center'>
+          <RoomCard />
+          <RoomCard />
+          <RoomCard />
+          <RoomCard />
+        </div>
       </div>
 
     </div>
