@@ -2,7 +2,6 @@
   <a href='https://red-rich.vercel.app'><img src='public/logo/red-rich-red.svg' width='220' height='220' alt='red-rich-logo'/></a>
 </p>
 
-<h2 align='center'>Welcome To RedRich GitHub</h2>
 <h1 align='center'>Royal RedRich Club</h1>
 
 [![Next.js](https://img.shields.io/badge/Next.js-11.1.2-blue)](https://nextjs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-4.4.3-blue)](https://www.typescriptlang.org/) [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-2.2.16-blue)](https://tailwindcss.com/)
