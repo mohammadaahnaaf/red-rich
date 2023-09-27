@@ -1,5 +1,5 @@
 <p align='center'>
-  <a href='https://red-rich.vercel.app'><img src='public/red-rich-red.svg' width='220' height='220' /></a>
+  <a href='https://red-rich.vercel.app'><img src='public/logo/red-rich-red.svg' width='220' height='220' alt='red-rich-logo'/></a>
 </p>
 
 <h2 align='center'>Welcome To RedRich GitHub</h2>
